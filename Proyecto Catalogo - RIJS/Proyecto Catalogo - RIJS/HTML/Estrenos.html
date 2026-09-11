@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinemas — Estrenos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Estrenos.css"> 
+ 
+
+</head>
+<body>
+
+ <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Cinemas</div>
+      <ul class="menu">
+        <li><a href="Main.html">Inicio</a></li>
+        <li><a href="Catalogo.html">Películas</a></li>
+        <li><a href="Estrenos.html">Estrenos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li>
+          <div class="search-container">
+            <input type="text" id="user-search" placeholder="Buscar películas..." oninput="filtrarCatalogo(this.value)">
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-estrenos">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-titulo-bg">2026</div>
+    <div class="hero-contenido">
+      <div class="hero-tag">En cartelera ahora</div>
+      <h1>Estrenos</h1>
+      <p>Las últimas películas y los grandes lanzamientos de la temporada, curados para ti.</p>
+    </div>
+  </section>
+
+  <!-- FILTROS -->
+  <div class="filtros-bar">
+    <span class="filtros-label">Filtrar:</span>
+    <button class="filtro-btn activo" onclick="filtrar('todos', this)">Todos</button>
+    <button class="filtro-btn" onclick="filtrar('accion', this)">Acción</button>
+    <button class="filtro-btn" onclick="filtrar('drama', this)">Drama</button>
+    <button class="filtro-btn" onclick="filtrar('terror', this)">Terror</button>
+    <button class="filtro-btn" onclick="filtrar('ciencia-ficcion', this)">Ciencia ficción</button>
+    <button class="filtro-btn" onclick="filtrar('animacion', this)">Animación</button>
+    <button class="filtro-btn" onclick="filtrar('comedia', this)">Comedia</button>
+  </div>
+
+  <!-- ESTRENO DESTACADO -->
+  <div class="seccion-titulo">
+    <h2>🎬 Estreno de la semana</h2>
+    <div class="linea"></div>
+  </div>
+
+  <div class="featured-wrap">
+    <div class="featured-card">
+      <div class="featured-poster">
+        <span class="inicial">F</span>
+      </div>
+      <div class="featured-info">
+        <div class="featured-badge">
+          <span class="badge-nuevo">Nuevo</span>
+          <span class="badge-fecha">23 Mayo 2026</span>
+        </div>
+        <h3>Furiosa: A Mad Max Saga</h3>
+        <div class="featured-meta">
+          <span class="meta-item">2h 28min</span>
+          <span class="meta-sep"></span>
+          <span class="meta-item">George Miller</span>
+          <span class="meta-sep"></span>
+          <span class="meta-item">+16</span>
+        </div>
+        <p class="featured-desc">
+          La historia de origen de Furiosa, la feroz guerrera que desafió a Inmortan Joe. Una épica de acción que expande el universo post-apocalíptico de Mad Max con una intensidad visual sin precedentes.
+        </p>
+        <div class="featured-generos">
+          <span class="genero-tag">Acción</span>
+          <span class="genero-tag">Aventura</span>
+          <span class="genero-tag">Post-apocalíptico</span>
+        </div>
+        <div class="featured-actions">
+          <button class="btn-primario">▶ Ver tráiler</button>
+          <button class="btn-secundario">+ Mi lista</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ESTA SEMANA -->
+  <div class="seccion-titulo">
+    <h2>Esta semana en cartelera</h2>
+    <div class="linea"></div>
+  </div>
+
+  <div class="estrenos-grid" id="grid-estrenos">
+  </div>
+
+  <!-- PRÓXIMAMENTE -->
+  <div class="seccion-titulo">
+    <h2>📅 Próximamente</h2>
+    <div class="linea"></div>
+  </div>
+
+  <div class="proximamente-wrap">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-fecha">
+          6 Junio
+          <span class="año">2026</span>
+        </div>
+        <div class="timeline-pelicula">
+          <h4>Thunderbolts*</h4>
+          <p>El equipo de antihéroes de Marvel en su primera misión conjunta. Dirigida por Jake Schreier.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Superhéroes</span>
+            <span class="timeline-tag">Acción</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-fecha">
+          20 Junio
+          <span class="año">2026</span>
+        </div>
+        <div class="timeline-pelicula">
+          <h4>How to Train Your Dragon</h4>
+          <p>Adaptación en acción real del clásico de animación de DreamWorks. Una aventura épica de amistad y libertad.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Aventura</span>
+            <span class="timeline-tag">Fantasía</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-fecha">
+          4 Julio
+          <span class="año">2026</span>
+        </div>
+        <div class="timeline-pelicula">
+          <h4>Mission: Impossible — The Final Reckoning</h4>
+          <p>El capítulo final de la saga de Ethan Hunt. Tom Cruise en las escenas de acción más arriesgadas de su carrera.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Acción</span>
+            <span class="timeline-tag">Espionaje</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-fecha">
+          18 Julio
+          <span class="año">2026</span>
+        </div>
+        <div class="timeline-pelicula">
+          <h4>The Fantastic Four: First Steps</h4>
+          <p>Los Cuatro Fantásticos llegan al MCU. Un diseño retrofuturista de los años 60 reimagina el equipo más icónico de Marvel.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Superhéroes</span>
+            <span class="timeline-tag">Ciencia ficción</span>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-fecha">
+          1 Agosto
+          <span class="año">2026</span>
+        </div>
+        <div class="timeline-pelicula">
+          <h4>Jurassic World: Rebirth</h4>
+          <p>Una nueva expedición científica en busca de material genético de dinosaurios amenaza con despertar algo que no debía.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Aventura</span>
+            <span class="timeline-tag">Ciencia ficción</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Cinemas — Todos los derechos reservados</p>
+  </footer>
+
+    <script src="../Javascript/Estrenos.js"></script>
+
+</body>
+</html>

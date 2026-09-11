@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinemas — Catálogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Catalogo.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Cinemas</div>
+      <ul class="menu">
+        <li><a href="Main.html">Inicio</a></li>
+        <li><a href="Catalogo.html">Películas</a></li>
+        <li><a href="Estrenos.html">Estrenos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+        <li>
+          <div class="search-container">
+            <input type="text" id="user-search" placeholder="Buscar películas..." oninput="filtrarCatalogo(this.value)">
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ABECEDARIO -->
+  <nav class="abecedario" aria-label="Navegación por letra">
+    <span class="abc-label">Ir a:</span>
+    <script>
+      const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+      letras.forEach(l => {
+        document.write(`<button class="letra-btn" onclick="irALetra('${l}')" title="Ir a ${l}">${l}</button>`);
+      });
+    </script>
+  </nav>
+
+  <!-- DESTACADO -->
+  <section class="destacado">
+    <div class="destacado-bg"></div>
+    <div class="destacado-overlay"></div>
+    <div class="destacado-letra">C</div>
+    <div class="destacado-contenido">
+      <span class="destacado-tag">🎬 Destacado de la semana</span>
+      <h2>Ciudadano Kane</h2>
+      <p>
+        Considerada una de las mejores películas de la historia del cine, Ciudadano Kane narra el ascenso y caída de un magnate de los medios de comunicación. Una obra maestra de la narrativa no lineal y la técnica cinematográfica.
+      </p>
+      <button class="btn-trailer">
+        <span class="play-icon"></span>
+        Ver tráiler
+      </button>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <main class="catalogo" id="catalogo">
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Cinemas — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../Javascript/Catalogo.js"></script>
+</body>
+</html> 

@@ -1,0 +1,267 @@
+    /* ── ABECEDARIO ── */
+    .abecedario {
+      background-color: var(--negro);
+      border-bottom: 2px solid var(--rojo);
+      padding: 12px 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .abc-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      color: var(--texto-muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-right: 8px;
+    }
+
+    .letra-btn {
+      background: none;
+      border: 1px solid var(--gris-borde);  
+      color: var(--texto-muted);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 15px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+    }
+
+    .letra-btn:hover, .letra-btn.activa {
+      background-color: var(--rojo);
+      border-color: var(--rojo);
+      color: #fff;
+    }
+
+    /* ── DESTACADO ── */
+    .destacado {
+      position: relative;
+      margin: 0;
+      height: 420px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 50%, #0a0a0a 100%);
+      border-bottom: 3px solid var(--rojo);
+    }
+
+    .destacado-bg {
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        0deg, transparent, transparent 34px,
+        rgba(255,255,255,0.02) 34px, rgba(255,255,255,0.02) 35px
+      ),
+      repeating-linear-gradient(
+        90deg, transparent, transparent 34px,
+        rgba(255,255,255,0.02) 34px, rgba(255,255,255,0.02) 35px
+      );
+    }
+
+    .destacado-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+    }
+
+    .destacado-contenido {
+      position: relative;
+      z-index: 2;
+      padding: 48px 60px;
+      max-width: 700px;
+    }
+
+    .destacado-tag {
+      display: inline-block;
+      background: var(--rojo);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      margin-bottom: 16px;
+    }
+
+    .destacado-letra {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 100px;
+      color: rgba(229,9,20,0.15);
+      position: absolute;
+      top: 20px;
+      right: 60px;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .destacado h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 52px;
+      color: #fff;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+
+    .destacado p {
+      font-size: 15px;
+      color: #bbb;
+      line-height: 1.7;
+      margin-bottom: 24px;
+      max-width: 520px;
+    }
+
+    .btn-trailer {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--rojo);
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      border-radius: 2px;
+    }
+
+    .btn-trailer:hover {
+      background: var(--rojo-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-trailer .play-icon {
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 10px solid #fff;
+    }
+
+    /* ── CATÁLOGO ── */
+    .catalogo {
+      padding: 40px 50px 60px;
+    }
+
+    .seccion-letra {
+      margin-bottom: 50px;
+    }
+
+    .seccion-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--gris-borde);
+    }
+
+    .seccion-letra-badge {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: var(--rojo);
+      line-height: 1;
+      min-width: 40px;
+    }
+
+    .seccion-linea {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--gris-borde), transparent);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+    }
+
+    /* ── CARD ── */
+    .card {
+      background-color: var(--gris-medio);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+      cursor: pointer;
+      border: 1px solid var(--gris-borde);
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 16px 40px rgba(229,9,20,0.25);
+      border-color: var(--rojo);
+    }
+
+    .card-poster {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      background: #1a1a1a;
+    }
+
+    .card-poster-placeholder {
+      width: 100%;
+      height: 220px;
+      background: linear-gradient(160deg, #1e1e1e, #111);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--gris-borde);
+    }
+
+    .card-poster-placeholder .inicial {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 64px;
+      color: rgba(229,9,20,0.3);
+      line-height: 1;
+    }
+
+    .card-poster-placeholder .icono {
+      font-size: 22px;
+      opacity: 0.3;
+    }
+
+    .card-info {
+      padding: 12px 14px 14px;
+    }
+
+    .card-titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--texto);
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card-año {
+      font-size: 12px;
+      color: var(--texto-muted);
+    }
+
+    .card-genero {
+      display: inline-block;
+      font-size: 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--oro);
+      margin-top: 6px;
+    }

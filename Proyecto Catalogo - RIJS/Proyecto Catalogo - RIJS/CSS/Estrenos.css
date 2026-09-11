@@ -1,0 +1,514 @@
+    /* ── HERO ESTRENOS ── */
+    .hero-estrenos {
+      position: relative;
+      height: 340px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--negro);
+      border-bottom: 3px solid var(--rojo);
+    }
+
+    .hero-bg-pattern {
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 20px,
+          rgba(229,9,20,0.04) 20px,
+          rgba(229,9,20,0.04) 21px
+        );
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 100%);
+    }
+
+    .hero-titulo-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 220px;
+      color: rgba(229,9,20,0.06);
+      line-height: 1;
+      letter-spacing: -4px;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-contenido {
+      position: relative;
+      z-index: 2;
+      padding: 40px 60px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--rojo);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      margin-bottom: 16px;
+    }
+
+    .hero-tag::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-radius: 50%;
+      animation: pulso 1.4s ease-in-out infinite;
+    }
+
+    @keyframes pulso {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    .hero-contenido h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 72px;
+      color: #fff;
+      letter-spacing: 3px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .hero-contenido p {
+      font-size: 15px;
+      color: var(--texto-muted);
+      max-width: 500px;
+    }
+
+    /* ── FILTROS ── */
+    .filtros-bar {
+      background: var(--negro);
+      border-bottom: 1px solid var(--gris-borde);
+      padding: 14px 60px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .filtros-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      color: var(--texto-muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-right: 4px;
+    }
+
+    .filtro-btn {
+      background: none;
+      border: 1px solid var(--gris-borde);
+      color: var(--texto-muted);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      padding: 6px 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-radius: 2px;
+    }
+
+    .filtro-btn:hover, .filtro-btn.activo {
+      background: var(--rojo);
+      border-color: var(--rojo);
+      color: #fff;
+    }
+
+    /* ── ESTRENO PRINCIPAL (FEATURED) ── */
+    .seccion-titulo {
+      padding: 40px 60px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .seccion-titulo h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px;
+      color: var(--texto);
+      letter-spacing: 2px;
+    }
+
+    .seccion-titulo .linea {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--gris-borde), transparent);
+    }
+
+    /* CARD HORIZONTAL FEATURED */
+    .featured-wrap {
+      padding: 0 60px 40px;
+    }
+
+    .featured-card {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      background: var(--gris-medio);
+      border: 1px solid var(--gris-borde);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+
+    .featured-card:hover { border-color: var(--rojo); }
+
+    .featured-poster {
+      background: linear-gradient(160deg, #2a1010, #111);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 360px;
+      border-right: 1px solid var(--gris-borde);
+    }
+
+    .featured-poster .inicial {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 100px;
+      color: rgba(229,9,20,0.4);
+      line-height: 1;
+    }
+
+    .featured-info {
+      padding: 40px 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      width: fit-content;
+    }
+
+    .badge-nuevo {
+      background: var(--rojo);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+    }
+
+    .badge-fecha {
+      color: var(--oro);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .featured-info h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: #fff;
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+
+    .featured-meta {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .meta-item {
+      font-size: 13px;
+      color: var(--texto-muted);
+    }
+
+    .meta-sep {
+      width: 4px;
+      height: 4px;
+      background: var(--gris-borde);
+      border-radius: 50%;
+    }
+
+    .featured-desc {
+      font-size: 15px;
+      color: #aaa;
+      line-height: 1.8;
+      max-width: 560px;
+    }
+
+    .featured-generos {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .genero-tag {
+      border: 1px solid var(--gris-borde);
+      color: var(--texto-muted);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+    }
+
+    .featured-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .btn-primario {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--rojo);
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      border-radius: 2px;
+    }
+
+    .btn-primario:hover {
+      background: var(--rojo-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-secundario {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--texto-muted);
+      border: 1px solid var(--gris-borde);
+      padding: 12px 28px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-radius: 2px;
+    }
+
+    .btn-secundario:hover {
+      border-color: var(--texto-muted);
+      color: var(--texto);
+    }
+
+    /* ── GRID ESTRENOS ── */
+    .estrenos-grid {
+      padding: 0 60px 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .estreno-card {
+      background: var(--gris-medio);
+      border: 1px solid var(--gris-borde);
+      border-radius: 4px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      animation: aparece 0.4s ease both;
+    }
+
+    .estreno-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(229,9,20,0.2);
+      border-color: var(--rojo);
+    }
+
+    @keyframes aparece {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .estreno-poster {
+      width: 100%;
+      height: 260px;
+      background: linear-gradient(160deg, #1e1010, #111);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+      border-bottom: 1px solid var(--gris-borde);
+    }
+
+    .estreno-poster .inicial {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 72px;
+      color: rgba(229,9,20,0.35);
+      line-height: 1;
+    }
+
+    .estreno-poster .icono {
+      font-size: 20px;
+      opacity: 0.3;
+    }
+
+    .estreno-ribbon {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      background: var(--rojo);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 3px 10px 3px 12px;
+    }
+
+    .estreno-info {
+      padding: 14px 16px 16px;
+    }
+
+    .estreno-fecha {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px;
+      color: var(--oro);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .estreno-titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--texto);
+      margin-bottom: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .estreno-genero {
+      font-size: 12px;
+      color: var(--texto-muted);
+    }
+
+    /* ── PRÓXIMAMENTE ── */
+    .proximamente-wrap {
+      padding: 0 60px 60px;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-left: 2px solid var(--gris-borde);
+      margin-left: 20px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 28px;
+      padding: 24px 0 24px 36px;
+      position: relative;
+      border-bottom: 1px solid var(--gris-borde);
+      transition: background 0.2s;
+    }
+
+    .timeline-item:last-child { border-bottom: none; }
+    .timeline-item:hover { background: rgba(229,9,20,0.03); }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 32px;
+      width: 12px;
+      height: 12px;
+      background: var(--gris-borde);
+      border-radius: 50%;
+      border: 2px solid var(--gris-oscuro);
+      transition: background 0.2s;
+    }
+
+    .timeline-item:hover::before { background: var(--rojo); }
+
+    .timeline-fecha {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      color: var(--rojo);
+      letter-spacing: 1px;
+      padding-top: 2px;
+    }
+
+    .timeline-fecha .año {
+      display: block;
+      font-size: 13px;
+      color: var(--texto-muted);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 400;
+      letter-spacing: 0;
+      margin-top: 2px;
+    }
+
+    .timeline-pelicula h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--texto);
+      margin-bottom: 4px;
+    }
+
+    .timeline-pelicula p {
+      font-size: 13px;
+      color: var(--texto-muted);
+      line-height: 1.6;
+    }
+
+    .timeline-tags {
+      display: flex;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .timeline-tag {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border: 1px solid var(--gris-borde);
+      color: var(--texto-muted);
+      border-radius: 2px;
+    }

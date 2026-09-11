@@ -1,0 +1,147 @@
+{
+  "destacado": {
+    "titulo": "Furiosa: A Mad Max Saga",
+    "fecha": "23 Mayo 2026",
+    "duracion": "2h 28min",
+    "director": "George Miller",
+    "clasificacion": "+16",
+    "sinopsis": "La historia de origen de Furiosa, la feroz guerrera que desafió a Inmortan Joe. Una épica de acción que expande el universo post-apocalíptico de Mad Max con una intensidad visual sin precedentes.",
+    "generos": [
+      "Acción",
+      "Aventura",
+      "Post-apocalíptico"
+    ],
+    "trailer": "https://www.youtube.com/embed/XJMuhwVlca4"
+  },
+  "enCartelera": [
+    {
+      "titulo": "Sinners",
+      "fecha": "19 May 2026",
+      "genero": "Terror",
+      "categoria": "terror",
+      "director": "Ryan Coogler",
+      "sinopsis": "Dos hermanos gemelos regresan a su tierra natal en el Mississippi de los años 30 para comenzar de nuevo, pero algo mucho más aterrador que el pasado los espera.",
+      "trailer": "https://www.youtube.com/embed/cBuuVi0Dv_o"
+    },
+    {
+      "titulo": "Final Destination: Bloodlines",
+      "fecha": "16 May 2026",
+      "genero": "Terror",
+      "categoria": "terror",
+      "director": "Zach Lipovsky",
+      "sinopsis": "Una estudiante universitaria descubre que toda su familia está en la mira del Destino. Para salvarlos deberá descubrir el origen de una maldición que lleva décadas persiguiéndolos.",
+      "trailer": "https://www.youtube.com/embed/8cFgPRViFqU"
+    },
+    {
+      "titulo": "Lilo & Stitch",
+      "fecha": "23 May 2026",
+      "genero": "Animación",
+      "categoria": "animacion",
+      "director": "Dean Fleischer Camp",
+      "sinopsis": "Adaptación en acción real del clásico de Disney. La pequeña Lilo conoce a Stitch, un experimento alienígena que aprende el significado de la familia en Hawái.",
+      "trailer": "https://www.youtube.com/embed/GcnOGBDCTTo"
+    },
+    {
+      "titulo": "Karate Kid: Legends",
+      "fecha": "30 May 2026",
+      "genero": "Acción",
+      "categoria": "accion",
+      "director": "Jonathan Entwistle",
+      "sinopsis": "Li Fong, un joven prodigio de kung-fu, llega a Nueva York y debe adaptarse a una nueva vida. Dos legendarios maestros unen fuerzas para entrenarlo ante un peligroso torneo.",
+      "trailer": "https://www.youtube.com/embed/oe1H7fynDY0"
+    },
+    {
+      "titulo": "28 Years Later",
+      "fecha": "20 Jun 2026",
+      "genero": "Terror",
+      "categoria": "terror",
+      "director": "Danny Boyle",
+      "sinopsis": "Veintiocho años después del brote de rabia que diezmó Gran Bretaña, un grupo de supervivientes se aventura por primera vez a explorar el continente devastado.",
+      "trailer": "https://www.youtube.com/embed/T5GCsKoFSkQ"
+    },
+    {
+      "titulo": "Materialists",
+      "fecha": "13 Jun 2026",
+      "genero": "Comedia",
+      "categoria": "comedia",
+      "director": "Celine Song",
+      "sinopsis": "Una casamentera de lujo en Nueva York se ve atrapada entre su exnovio empobrecido y el millonario perfecto que ella misma le presentó a otra mujer.",
+      "trailer": "https://www.youtube.com/embed/yZMj5k7B63k"
+    },
+    {
+      "titulo": "Eddington",
+      "fecha": "27 Jun 2026",
+      "genero": "Drama",
+      "categoria": "drama",
+      "director": "Ari Aster",
+      "sinopsis": "Un sheriff de un pequeño pueblo de Nuevo México se enfrenta a un gobernador corrupto durante la pandemia, mientras las tensiones sociales y personales estallan en violencia.",
+      "trailer": "https://www.youtube.com/embed/GisXBG-XYIY"
+    },
+    {
+      "titulo": "Predator: Badlands",
+      "fecha": "7 Nov 2025",
+      "genero": "Ciencia ficción",
+      "categoria": "ciencia-ficcion",
+      "director": "Dan Trachtenberg",
+      "sinopsis": "En un futuro lejano, una androide diseñada como arma cruza caminos con un Predator en una batalla de supervivencia a través de territorios salvajes e inexplorados.",
+      "trailer": "https://www.youtube.com/embed/kBjGLRL7kXE"
+    }
+  ],
+  "proximamente": [
+    {
+      "titulo": "Thunderbolts*",
+      "fecha": "6 Junio",
+      "anio": "2026",
+      "descripcion": "El equipo de antihéroes de Marvel en su primera misión conjunta. Dirigida por Jake Schreier.",
+      "tags": [
+        "Superhéroes",
+        "Acción"
+      ],
+      "trailer": "https://www.youtube.com/embed/QeNmFkNXFHk"
+    },
+    {
+      "titulo": "How to Train Your Dragon",
+      "fecha": "20 Junio",
+      "anio": "2026",
+      "descripcion": "Adaptación en acción real del clásico de DreamWorks. Una aventura épica de amistad y libertad.",
+      "tags": [
+        "Aventura",
+        "Fantasía"
+      ],
+      "trailer": "https://www.youtube.com/embed/VZGUkH21m5A"
+    },
+    {
+      "titulo": "Mission: Impossible — The Final Reckoning",
+      "fecha": "4 Julio",
+      "anio": "2026",
+      "descripcion": "El capítulo final de la saga de Ethan Hunt. Tom Cruise en las escenas de acción más arriesgadas de su carrera.",
+      "tags": [
+        "Acción",
+        "Espionaje"
+      ],
+      "trailer": "https://www.youtube.com/embed/avz5GkBChYA"
+    },
+    {
+      "titulo": "The Fantastic Four: First Steps",
+      "fecha": "18 Julio",
+      "anio": "2026",
+      "descripcion": "Los Cuatro Fantásticos llegan al MCU. Un diseño retrofuturista de los años 60 reimagina el equipo más icónico de Marvel.",
+      "tags": [
+        "Superhéroes",
+        "Ciencia ficción"
+      ],
+      "trailer": "https://www.youtube.com/embed/szrB7b2mq4Q"
+    },
+    {
+      "titulo": "Jurassic World: Rebirth",
+      "fecha": "1 Agosto",
+      "anio": "2026",
+      "descripcion": "Una nueva expedición científica en busca de material genético de dinosaurios amenaza con despertar algo que no debía.",
+      "tags": [
+        "Aventura",
+        "Ciencia ficción"
+      ],
+      "trailer": "https://www.youtube.com/embed/tFO7QRQHM44"
+    }
+  ]
+}

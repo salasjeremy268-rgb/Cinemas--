@@ -1,0 +1,18 @@
+
+/* ── FOOTER ── */
+    footer {
+      background-color: var(--negro);
+      border-top: 1px solid var(--gris-borde);
+      text-align: center;
+      padding: 24px 50px;
+      font-size: 13px;
+      color: var(--texto-muted);
+    }
+
+    .catalogo {
+  min-height: calc(100vh - 300px);
+}
+    /* ── SCROLL SUAVE ── */
+    html { scroll-behavior: smooth; }
+
+    .seccion-letra { scroll-margin-top: 120px; }
